@@ -1,0 +1,66 @@
+*{
+    border:sold;
+}
+
+body {
+    margin: 0;
+    display: flex;
+}
+
+#headerContainer {
+    background-image:url(images/allyson-beaucourt-FReSqs4uLYo-unsplash.jpg);
+    background-size: cover;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header { 
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    font-size: 2rem;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 20vh;
+}
+
+main {
+    width: 60vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    background-color: rgb(242, 242, 255);
+}
+
+main>*:not(form) {
+    padding: 0 30px 0 30px;
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+form {
+    background-color: white;
+}
+fieldset {
+    margin: 0;
+    border: none;
+    width: min(600px, 100%);
+    background-color: white;
+    box-shadow: 0px 5px 10px -3px rgb(209, 209, 209);
+    display: flex;
+    flex-flow: wrap;
+    gap:20px;
+}
+
