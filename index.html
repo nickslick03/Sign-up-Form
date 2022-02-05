@@ -11,55 +11,60 @@
     <div id="headerContainer">
         <header>
             <h1>✧</h2>
-            <h1>AstroLink</h1>
+            <h1>AstroLink</h1> 
         </header>
     </div>
+    
     <main>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+            Connect with tailor-made lovers based the logically sound foundations of astrology! 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
             Non sodales neque sodales ut etiam sit amet. <br><br><br> 
-            Eleifend donec pretium vulputate sapien.
+            Manifest your perfect lover tonight.
         </p>
-        <form action="" method="post">
+        <form id="signUp" onsubmit="return validate()">
             <fieldset>
-                <legend>Meet your starmate today!</legend>
+                <legend>Sign up to meet your starmate!</legend>
                 <div>
-                    <label for="firstName">FIRST NAME</label>
+                    <label for="firstName">FIRST NAME*</label>
                     <br>
-                    <input type="text" id="firstName">
+                    <input type="text" id="firstName" required>
                 </div>
                 <div>
-                    <label for="lastName">LAST NAME</label>
+                    <label for="lastName">LAST NAME*</label>
                     <br>                    
-                    <input type="text" id="lastName">
+                    <input type="text" id="lastName" required>
                 </div>
                 <div>
-                    <label for="email">EMAIL</label>
+                    <label for="email">EMAIL*</label>
                     <br>
-                    <input type="text" id="email">
+                    <input type="email" id="email" required>
                 </div>
                 <div>
-                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <label for="phoneNumber">PHONE NUMBER*</label>
                     <br>
-                    <input type="text" id="phoneNumber">
+                    <input type="number" id="phoneNumber" title="Enter a ten-digit phone number." required>
                 </div>
                 <div>
-                    <label for="password">PASSWORD</label>
+                    <label for="password">PASSWORD*</label>
                     <br>
-                    <input type="text" id="password">
+                    <input type="password" id="password" required>
                 </div>
                 <div>
-                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <label for="confirmPassword">CONFIRM PASSWORD*</label>
                     <br>
-                    <input type="text" id="confirmPassword">
+                    <input type="password" id="confirmPassword" required>
                 </div>
-            </fieldset>
-            <button type="submit" id="createAccount">Create Account</button>
+                <div id="error"></div>
+                <div id="error2"></div>
+            </fieldset>    
         </form>
+        
+        <button type="submit" id="createAccount" form="signUp">Create Account</button>
         <div>
-            Already have an account? <a href="http://">Log in</a>
+            Already have an account? <a href="#">Log in</a>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
